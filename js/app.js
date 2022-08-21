@@ -32,6 +32,12 @@ elForm.addEventListener("submit", function (evt) {
   let elParagraphSurname = document.createElement("p");
   let elParagraphAge = document.createElement("p");
   let elLinkContact = document.createElement("a");
+  
+  elItem.setAttribute("class", "w-100 col-12")
+  elParagraphName.setAttribute("class", "text-center");
+  elParagraphAge.setAttribute("class", "text-center");
+  elParagraphSurname.setAttribute("class", " text-center");
+  elLinkContact.setAttribute("class", "text-center");
 
   for (let i = 0; i < arrResultObject.length; i++) {
     elParagraphName.textContent = `Name : ${arrResultObject[i].Name}`;
